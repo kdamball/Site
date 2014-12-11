@@ -1,11 +1,8 @@
-var server = require("./server/server"),
-    router = require("./route/router"),
-    requestHandlers = require("./request/requestHandler");
+var http = require("http");
 
-var handle = {};
-handle["/"] = requestHandlers.start;
-handle["/start"] = requestHandlers.start;
-handle["/upload"] = requestHandlers.upload;
-handle["/show"] = requestHandlers.show;
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');
+}).listen(1337, '127.0.0.1');
 
-server.start(router.route, handle);
+console.log('Server running at http://127.0.0.1:1337/');
