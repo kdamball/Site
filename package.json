@@ -9,7 +9,10 @@
   },
   "description": "Site\r =======",
   "main": "./src/index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha":  "latest",
+    "chai": "latest"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/kdamball/Site.git"
