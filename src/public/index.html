@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='icon' href="/favicon.ico" sizes="256x256" type="image/png" />
+  <meta charset="utf-8" />
+  <meta name="author" content="Kado Damball" />
+  <meta name="description" content="Kado Damball's personal website." />
+  <meta name="keywords" content="kado, damball, kado damball, kadodamball, kado, javascript, web developer, developer" />
+
+  <title>Kado</title>
+  <meta name="viewport" content="width=device-width">
+  <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+  <link href='/css/kado.css' rel='stylesheet' type='text/css'>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+  
+<body>
+  
+  <div class="wrapper">
+    
+    <img id="kado" src="/pics/index.jpg" alt="Kado Spinning">
+    
+    <div id="welcome">
+      <h1>Hi, There</h1>
+      <p class="bubble">
+        I'm <strong>Kado</strong>. <br>
+        I know some JavaScript (Front-end &amp; Node.js), HTML(5), CSS(3), Python, and PHP (in that order). I work as a Web Developer/Programmer.
+        I am also interested in all things data: Econometrics, web-data scrapping, machine learning, data mining and data visualizations.
+        Feel free to contact me about any of the topics mentioned.
+        <small id="message">Oh, and please don't click the picture, I get rather dizzy...</small>
+      </p>
+      <h2>More About Me:</h2>
+    </div>
+    
+    <div id="features">
+      <ol>
+      
+        <li>
+          <h2>Recent Activity</h2>
+          <ul class="gh-api" id="proj">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          
+        </li>
+        
+        <li>
+          <h2>Fun projects</h2>
+          <ul id="proj">
+            <li><a href="/footystats">UK Football League Stats</a><br></li><br>
+            <li><a href="/soundcloud">SoundBum</a></li><br>
+            <li><a href="/gifer">Canvas Animation</a></li><br>
+            <li><a href="/guess">Guess Game (BSA implementation)</a></li><br>
+            <li><a href="/Camera">PhotoBooth</a></li>
+          </ul>
+        <li>
+          <h2>Contact</h2>
+            <ul id="proj">
+              <li><a href="http://github.com/kdamball" target="_blank">GitHub</a><br></li><br>
+              <li><a href="http://www.toptal.com/javascript#evented-future" target="_blank">Work</a></li>
+              <li><a href="http://linkedin.com/pub/kado-damball/56/358/688" target="_blank">LinkedIn</a></li><br>
+              <li><a href="http://tckidd.wordpress.com" target="_blank">Blog</a></li><br>
+              <li><a href="http://twitter.com/kdamball" target="_blank">Twitter</a></li><br>
+              <li><a href="/resume" target="_blank">Resume</a></li><br>
+              <li><span id="mail">Email</span></li><br>
+            </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+    
+  <script src="/js/GHApi.min.js"></script>
+  <script src="/js/kado.min.js"></script>
+ 
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48570459-1', 'kdamball.com');
+  ga('send', 'pageview');
+
+</script>
+  
+</body>
+</html>

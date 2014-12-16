@@ -1,0 +1,13 @@
+#pug{
+	margin-left:25%;
+}
+
+.message{
+	font-size:1.25em;;
+	font-family: "Nunito", Helvetica, Arial,  sans-serif;
+	font-weight:bold;
+	text-align:center;
+}
+a{
+	text-decoration: none;
+}
