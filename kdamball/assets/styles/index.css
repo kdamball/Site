@@ -73,6 +73,7 @@ p em {
 }
 
 #kado {
+  width: 150px;
   float: left;
   margin-top: 3em
 }
