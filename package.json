@@ -2,15 +2,11 @@
   "name": "Site",
   "version": "0.0.1",
   "dependencies": {
-    "connect": "latest",
-    "express": "^4.5.1",
-    "finalhandler": "^0.3.2",
-    "serve-static": "^1.7.1"
   },
   "description": "Site\r =======",
   "main": "./src/index.js",
   "devDependencies": {
-    "mocha":  "latest",
+    "mocha": "latest",
     "chai": "latest"
   },
   "repository": {
