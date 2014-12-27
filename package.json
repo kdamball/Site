@@ -2,6 +2,8 @@
   "name": "Site",
   "version": "0.0.1",
   "dependencies": {
+    "sails": "latest",
+    "forever": "latest"
   },
   "description": "Site\r =======",
   "main": "./src/index.js",
