@@ -1,5 +1,5 @@
 {
-  "name": "kdamball",
+  "name": "kdamball.com",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
@@ -32,6 +32,6 @@
     "type": "git",
     "url": "git://github.com/anonymous node/sails user/kdamball.git"
   },
-  "author": "anonymous node/sails user",
+  "author": "Kado Damball",
   "license": ""
 }
