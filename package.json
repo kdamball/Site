@@ -6,7 +6,7 @@
     "forever": "latest"
   },
   "description": "Site\r =======",
-  "main": "./src/index.js",
+  "main": "./kdamball/app.js",
   "devDependencies": {
     "mocha": "latest",
     "chai": "latest"
