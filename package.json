@@ -5,8 +5,11 @@
     "sails": "latest",
     "forever": "latest"
   },
-  "description": "Site\r =======",
+  "description": "Kado Damball's Personal Site",
   "main": "./kdamball/app.js",
+  "scripts": {
+    "start": "node ./kdamball/app.js"  
+  },
   "devDependencies": {
     "mocha": "latest",
     "chai": "latest"
