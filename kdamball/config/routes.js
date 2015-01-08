@@ -36,7 +36,9 @@ module.exports.routes = {
     view: 'homepage'
   },
 
-  '/resume': '/docs/resume.pdf'
+  '/resume': '/docs/resume.pdf',
+
+  'GET *': 'HeaderController.replacePoweredBy'
 
   /***************************************************************************
   *                                                                          *

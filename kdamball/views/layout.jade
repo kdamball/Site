@@ -1,0 +1,18 @@
+doctype html
+
+html(lang="en")
+    head
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    if pageTitle
+        title #{pageTitle}
+    else
+        title Kado Damball
+    link(rel="icon" href="/favico.ico" izes="256x256" type="image/png")
+    meta(name="author" content="Kado Damball")
+    meta(name="description" content="Kado Damball's personal website.")
+    meta(name="keywords" content="kado, damball, kado damball, kadodamball, kado, javascript, web developer, developer")
+    link(rel="stylesheet" href="/styles/index.css" type="text/css")
+    link(href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css')
+
+    body
+        block body
