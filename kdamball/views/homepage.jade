@@ -28,14 +28,17 @@ block body
                 li
                     h2 Fun Projects:
                     ul#proj
-                        li This list will be updated soon!
+                        each src, project in {"Responsive Images": "http://www.toptal.com/responsive-web/one-size-fits-some-an-examination-of-responsive-image-solutions", Soundbum: "http://github.com/kdamball/Soundbum", "GitHub API Wrapper": "http://github.com/kdamball/GH-API", Carouse: "http://github.com/kdamball/Carouse"}
+                            li
+                                a(href=src) #{project}
+                            br
 
                 li 
-                    h2 Contact:
+                    h2 Contact/Links:
                     ul#proj
                         each link, name in {GitHub: "http://github.com/kdamball", Work: "http://www.toptal.com/javascript#evented-future", LinkedIn: "http://linkedin.com/pub/kado-damball/56/358/688", Blog: "http://tckidd.wordpress.com", Twitter: "http://twitter.com/kdamball", Resume: "/resume"}
                             li
-                                a(href=link) #{name}
+                                a(href=link target="_blank") #{name}
                             br
                         li <span id="mail">Email</span>
                         br
