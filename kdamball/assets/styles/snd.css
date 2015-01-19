@@ -43,6 +43,13 @@ input[type=submit]{
 #error{
 	color:red;
 }
+
+small{
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+}
+
 @media screen and (max-width: 500px){
 	#info, #target{
 		display:block;
