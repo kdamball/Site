@@ -36,6 +36,13 @@ module.exports.routes = {
     view: 'homepage'
   },
 
+  '/soundcloud': {
+    view: 'soundcloud',
+    locals: {
+      pageTitle: "SoundBum - Play Music From Your Favourite Genre"
+    }
+  },
+
   '/resume': '/docs/resume.pdf',
 
   'GET *': 'HeaderController.replacePoweredBy'

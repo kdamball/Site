@@ -1,0 +1,22 @@
+extends layout
+
+block styles
+    link(rel="stylesheet" type="text/css" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css")
+    link(rel="stylesheet" type="text/css" href="/styles/snd.css")
+
+block body
+    form
+        label Enter a Genre: 
+        input#genre
+        input#button(type="submit" value="Listen")
+        br
+        span#error
+
+    #target
+        noscript
+            p#sorry
+                | Oops<br><br> Please ensure you have javascript enabled and/or you are using a javascript compatible browser<br><br> - Kado
+    #info
+
+    for src in ["http://code.jquery.com/jquery-latest.js", "http://connect.soundcloud.com/sdk.js", "https://w.soundcloud.com/player/api.js", "js/soundcloud/snd.js", "js/soundcloud/main.js"]
+        script(type="text/javascript" src=src)
