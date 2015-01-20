@@ -43,6 +43,15 @@ module.exports.routes = {
     }
   },
 
+  '/gifer': {
+    view: 'gifer',
+    locals: {
+      pageTitle: "Gifer - Gifs on Canvas"
+    }
+  },
+
+  '/gifer.html': '/gifer',
+
   '/resume': '/docs/resume.pdf',
 
   'GET *': 'HeaderController.replacePoweredBy'

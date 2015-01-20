@@ -1,0 +1,29 @@
+extends layout
+
+block styles
+    style
+        | #gifs{display:none;}button{border:0;background:transparent;}#svc{margin-top:-40px;}#controls{height:50%;}#controls img{height: 100%; margin:-140px -100px; float:left;}
+
+block body
+    #gifs
+        - var imageNumber = 1;
+        while imageNumber < 9
+            img(src="/images/"+imageNumber+".gif" id="tree"+imageNumber)
+            - imageNumber++
+
+    canvas#svc(width="200" height="420")
+        | YOU EITHER DON'T HAVE JAVASCRIPT ENABLED OR NEED TO UPDATE YOUR BROWSER!
+    br
+
+    #controls
+        button#front
+            img(src="/images/play.png")
+
+        button#back
+            img(src="/images/back.png")
+
+        button#pause
+            img(src="/images/pause.png")
+
+    script(src="/js/gifer.js")
+
