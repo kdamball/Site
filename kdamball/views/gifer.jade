@@ -2,7 +2,7 @@ extends layout
 
 block styles
     style
-        | #gifs{display:none;}button{border:0;background:transparent;}#svc{margin-top:-40px;}#controls{height:50%;}#controls img{height: 100%; margin:-140px -100px; float:left;}
+        | #gifs{display:none;}button{border:0;background:transparent;}#svc{margin-top:-40px;}#controls{height:50%;}#controls img{height: 100%; margin:-140px -100px; float:left;}small{position:relative;bottom:10px;left:10px; margin:20px;}
 
 block body
     #gifs
@@ -24,6 +24,9 @@ block body
 
         button#pause
             img(src="/images/pause.png")
+
+    small
+        a(href="http://github.com/kdamball/CanvasGIF") Source Code
 
     script(src="/js/gifer.js")
 
