@@ -1,0 +1,21 @@
+extends layout
+
+block styles
+    link(rel="stylesheet" type="text/css" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css")
+    link(rel="stylesheet" type="text/css" href="/styles/snd.css")
+    link(rel="stylesheet" type="text/css" href="/styles/carouse.css")
+    style
+        | h2 {text-align: center;} #carousel{width: 400px; height: 250px; padding: 20px; margin: 50px auto;} #carousel img{width:100px;} #carousel .frame{float: left; margin: 10px}
+
+block body
+    h2 Simple Carousel widget
+
+    #carousel
+        each element in [1,2,3,4,5,6,7,8]
+            div
+                img(src="/images/" +element+ ".gif")
+
+    script(src="http://code.jquery.com/jquery-latest.js")
+    script(src="/js/carouse.min.js")
+    script
+        | $("#carousel").carouse(3)

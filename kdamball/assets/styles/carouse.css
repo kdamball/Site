@@ -1,0 +1,68 @@
+@-webkit-keyframes carouse{
+   0% {
+    margin-left: 5px;
+    opacity: 0;
+  }
+  
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes carouse{
+   0% {
+    margin-left: 5px;
+    opacity: 0;
+  }
+  
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+.carouseKids{
+  -webkit-animation-name: carouse;
+  -moz-animation-name: carouse;
+  animation-name: carouse;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  display: block !important;
+  text-align: center;
+}
+
+#carousel::before{
+  position: relative;
+  width: 0;
+  height: 0;
+  top: 25%;
+  transform: translateY(100%);
+  content: "";
+  float: left;
+  border-top: 1em solid transparent;
+  border-bottom: 1em solid transparent;
+  border-right: 1em solid #000;
+}
+
+#carousel::after{
+  position: relative;
+  width: 0;
+  height: 0;
+  top: 25%;
+  transform: translateY(100%);
+  content: "";
+  float: right;
+  border-top: 1em solid transparent;
+  border-bottom: 1em solid transparent;
+  border-left: 1em solid #000;
+}
+
+#carousel img{
+  width: 100%;
+}
+
+#carousel .frame{
+  display: none;
+}

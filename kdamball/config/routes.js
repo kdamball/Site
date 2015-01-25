@@ -52,6 +52,13 @@ module.exports.routes = {
 
   '/gifer.html': '/gifer',
 
+  '/carouse': {
+    view: 'carouse',
+    locals: {
+      pageTitle: "Carouse - Simple Carousel"
+    }
+  },
+
   '/resume': '/docs/resume.pdf',
 
   'GET *': 'HeaderController.replacePoweredBy'
