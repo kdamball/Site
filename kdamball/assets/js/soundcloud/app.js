@@ -1,4 +1,5 @@
-var snd = angular.module("Snd", []);
+var snd = angular.module("Snd", []),
+    player = document.getElementById("player");
 
 snd.controller("SearchController", ["$scope", "SndFactory", function($scope, SndFactory){
     $scope.search = function(){
@@ -24,13 +25,13 @@ snd.controller("SearchController", ["$scope", "SndFactory", function($scope, Snd
             download:true,
             show_artwork:true
           },
-          document.getElementById("player")
+          player
         );
 
         $rootScope.description = song.description;
     }
 
-}]).factory("SndFactory", ["$rootScope", "$q", function($rootScope, $q){
+}]).factory("SndFactory", ["$rootScope", function($rootScope){
     SC.initialize({
       client_id: '762b8d030947ba97c00769ffb6c5e61e'
     });
@@ -62,8 +63,6 @@ snd.controller("SearchController", ["$scope", "SndFactory", function($scope, Snd
             //force update on new search
             $rootScope.$apply()
 
-            // document.title = tracks[random].genre + " : " + tracks[random].title ;
-            
           }
       });
     }
