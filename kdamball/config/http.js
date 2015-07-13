@@ -29,6 +29,10 @@ module.exports.http = {
   * router is invoked by the "router" middleware below.)                     *
   *                                                                          *
   ***************************************************************************/
+    poweredBy: function(req, res, next){
+      res.setHeader("X-Powered-By", "Potato");
+      next();
+    },
 
     order: [
       //'startRequestTimer',
@@ -39,7 +43,7 @@ module.exports.http = {
       'handleBodyParserError',
       'compress',
       'methodOverride',
-      //'poweredBy',
+      'poweredBy',
       '$custom',
       'router',
       'www',

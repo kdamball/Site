@@ -43,6 +43,10 @@ module.exports.routes = {
     }
   },
 
+  '/SoundBum': '/soundcloud',
+
+  '/soundcloud.html': '/soundcloud',
+
   '/gifer': {
     view: 'gifer',
     locals: {
@@ -59,9 +63,7 @@ module.exports.routes = {
     }
   },
 
-  '/resume': '/docs/resume.pdf',
-
-  'GET *': 'HeaderController.replacePoweredBy'
+  '/resume': '/docs/resume.pdf'
 
   /***************************************************************************
   *                                                                          *
