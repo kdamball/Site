@@ -4,10 +4,14 @@ var client = new twilio.RestClient(sails.config.twilio.AccountSID, sails.config.
 
 var sendMessage =  function (number, message){
 
+    if (number.length < 9){
+        return;
+    }
+
     client.messages.create({
 
         to: '+255' + number,
-        from: 'Shamo',
+        from: 'Fortis-Ins.',
         body: message
 
     }, function(error, message) {

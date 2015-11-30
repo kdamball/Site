@@ -5,8 +5,6 @@ block styles
     style
         | body{padding: 10%;}
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/js")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js" type="text/js")
-
 
 block body
     h2 SMS Demo
@@ -14,13 +12,14 @@ block body
         h4 Message sent to #{number}
     form(class='col s12' method='POST' action='')
         div(class='row')
-        div(class="input-field col s6")
-            input(name='number' id='number' class='validate' placeholder="Enter your phone number")
-        div(class="input-field col s12")
-            textarea(name='message' id='message' class='validate')
-            label(for='message') Enter your Message Below
-        div(class="input-field col s3")
-            input(type="submit" class='waves-effect waves-light btn')
+            div(class="input-field col s6")
+                input(name='number' id='number' type='text' class='validate' placeholder="Enter your phone number")
+            div(class="input-field col s12")
+                textarea(name='message' id='message' class='materialize-textarea')
+                label(for='message') Enter your Message Below
+            div(class="input-field col s12")
+                input(type="submit" class='waves-effect waves-light btn')
 
 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js" type="text/js")
     script $(document).ready(function() {$('#message').characterCounter();});
