@@ -63,6 +63,15 @@ module.exports.routes = {
     }
   },
 
+  'GET /sms': {
+    view: 'sms',
+    locals: {
+      pageTitle: 'SMS Demo'
+    }
+  },
+
+  'POST /sms': 'SMSController.send',
+
   '/resume': '/docs/resume.pdf'
 
   /***************************************************************************

@@ -2,13 +2,14 @@
   "name": "Site",
   "version": "0.0.1",
   "dependencies": {
+    "forever": "latest",
     "sails": "latest",
-    "forever": "latest"
+    "twilio": "^2.5.2"
   },
   "description": "Kado Damball's Personal Site",
   "main": "./kdamball/app.js",
   "scripts": {
-    "start": "node ./kdamball/app.js"  
+    "start": "node ./kdamball/app.js"
   },
   "devDependencies": {
     "mocha": "latest",
