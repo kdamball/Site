@@ -23,7 +23,8 @@ a {
   padding-bottom: 0.1em;
   position: relative;
   color: #35659B;
-  text-decoration: none; 
+  text-decoration: none;
+  word-break: break-word;
 }
 
 a:after {
@@ -75,7 +76,8 @@ p em {
 #kado {
   width: 150px;
   float: left;
-  margin-top: 5.3em
+  margin-top: 5.3em;
+  border-radius: 50%;
 }
 
 #welcome > h2 {
