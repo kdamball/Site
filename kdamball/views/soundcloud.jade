@@ -1,7 +1,7 @@
 extends layout
 
 block styles
-    link(rel="stylesheet" type="text/css" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css")
+    link(rel="stylesheet" type="text/css" href="//necolas.github.io/normalize.css/3.0.1/normalize.css")
     link(rel="stylesheet" type="text/css" href="/styles/snd.css")
 
 block body
@@ -30,8 +30,8 @@ block body
                         span 
                             | {{ song.title }}
 
-    for src in ["https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js", "http://connect.soundcloud.com/sdk.js", "https://w.soundcloud.com/player/api.js", "js/soundcloud/app.js"]
+    for src in ["//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js", "//connect.soundcloud.com/sdk.js", "//w.soundcloud.com/player/api.js", "js/soundcloud/app.js"]
         script(type="text/javascript" src=src)
 
     small
-        a(href="http://github.com/kdamball/Soundbum") Source Code
+        a(href="//github.com/kdamball/Soundbum") Source Code
